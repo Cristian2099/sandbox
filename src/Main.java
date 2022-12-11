@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int salario = 1000;
+        salario+=200;
+        salario-=50;
+        System.out.println(salario);
     }
 }
