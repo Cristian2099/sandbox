@@ -6,7 +6,7 @@ public class Main {
     }
 
     /**
-     * DESCRIPCIÓN: Devuelve un string que se le pase.
+     * DESCRIPCIÓN: Devuelve cualquier string que se le pase.
      * @param string es una cadena de texto cualquiera.
      * @return devuelve la cadena de texto.
      * */
