@@ -1,9 +1,12 @@
+import javax.print.DocFlavor;
+
 public class Main {
     public static void main(String[] args) {
         Main mainClass = new Main();
         String name = mainClass.returnName("Cristian");
         String separatedName = mainClass.separateName(name);
-        System.out.println(mainClass.joinString(separatedName));
+        String joinedName = mainClass.joinString(separatedName);
+        System.out.println(mainClass.reverseString(joinedName));
     }
 
     /**
@@ -42,5 +45,9 @@ public class Main {
      * **/
     public String joinString(String string){
         return string.strip().replaceAll(" ", "");
+    }
+
+    public String reverseString(String string){
+        return string;
     }
 }
