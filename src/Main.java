@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         Main mainClass = new Main();
-        String nombre = mainClass.returnName("Cristian");
-        System.out.println(mainClass.separateName(nombre));
+        String name = mainClass.returnName("Cristian");
+        String separatedName = mainClass.separateName(name);
+        System.out.println(mainClass.joinString(separatedName));
     }
 
     /**
@@ -30,8 +31,16 @@ public class Main {
             nameWithSpaces.append(letra).append(" ");
         }
 
-        int finalChar = nameWithSpaces.length() - 1;
-        finalName = String.valueOf(nameWithSpaces.deleteCharAt(finalChar));
+        finalName = String.valueOf(nameWithSpaces.toString().strip());
         return finalName;
+    }
+
+    /**
+     * DESCRIPCIÓN: le quita los espacios a un string.
+     * @param string string para quitarle los espacios.
+     * @return un string con todos los espacios eliminados
+     * **/
+    public String joinString(String string){
+        return string.strip().replaceAll(" ", "");
     }
 }
