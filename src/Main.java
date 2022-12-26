@@ -48,6 +48,10 @@ public class Main {
     }
 
     public String reverseString(String string){
-        return string;
+        String reversedString = "";
+        for (int i = string.length() -1; i >= 0; i--) {
+            reversedString = reversedString + string.charAt(i);
+        }
+        return reversedString;
     }
 }
